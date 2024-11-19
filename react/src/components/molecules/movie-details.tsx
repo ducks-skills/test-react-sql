@@ -8,6 +8,7 @@ import {
   Chip,
 } from "@mui/material";
 import MoviesContext from "../../contexts/movies-context";
+import { getPosterPath } from "../utils/get-poster-path";
 
 const MovieDetails: FC = () => {
   const { selectedMovie } = useContext(MoviesContext);
@@ -26,7 +27,7 @@ const MovieDetails: FC = () => {
     >
       <CardMedia
         component="img"
-        image={`https://image.tmdb.org/t/p/w500${selectedMovie.poster_path}`}
+        image={getPosterPath(selectedMovie?.poster_path)}
         alt={selectedMovie.title}
         sx={{ flex: 1, objectFit: "contain", height: "60vh", paddingY: 3 }}
       />

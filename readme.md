@@ -1,5 +1,7 @@
 # Study Case
 
+`Please provide your api key in  React's .env file`
+
 This project consists of two main parts:
 
 1. A React application with Material-UI for the frontend.

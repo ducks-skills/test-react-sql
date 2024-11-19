@@ -1,4 +1,4 @@
-import { Box, Container, Stack, Typography } from "@mui/material";
+import { Box, Container, Stack } from "@mui/material";
 import SearchContainer from "../atoms/search-container";
 import SearchBar from "../molecules/search-bar";
 import MovieList from "../molecules/movie-list";
